@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,8 +27,9 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles/normalize.css" />
+    
     <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/footer.css">
 
     <title>Contact</title>
   </head>
@@ -93,17 +95,6 @@
               >
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
@@ -220,12 +211,44 @@
       </section>
     </div>
 
-    <footer
-      class="text-center"
-      style="background-color: black; color: white; height: 3rem"
-    >
-      This is footer
-    </footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col" style="width: 25%;">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" style="width: 25%;">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact US</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" style="width: 25%;">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">Resin Watch</a></li>
+              <li><a href="#">Floral Frames</a></li>
+              <li><a href="#">Floral hoops</a></li>
+              <li><a href="#">Sculpture</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" style="width: 25%;">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
