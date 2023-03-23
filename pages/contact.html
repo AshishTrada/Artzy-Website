@@ -27,9 +27,9 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    
+
     <link rel="stylesheet" href="../styles/contact.css" />
-    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/footer.css" />
 
     <title>Contact</title>
   </head>
@@ -71,15 +71,43 @@
                 Products
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-center fs-5 text-decoration-underline" href="./product.html">Products</a></li>
-                <li><a class="dropdown-item" href="./products/floral_frames.html">Floral Frames</a></li>
-                <li><a class="dropdown-item" href="./products/floral_hoops.html">Floral hoop</a></li>
-                <li><a class="dropdown-item" href="./products/gift_wrapping.html">Gift wrapping</a></li>
                 <li>
-                  <a class="dropdown-item" href="./products/resin_artworks.html">Resin Artworks/sculpture</a>
+                  <a
+                    class="dropdown-item text-center fs-5 text-decoration-underline"
+                    href="./product.html"
+                    >Products</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="./products/resin_watches.html">Resin watches</a></li>
-                <li><a class="dropdown-item" href="./products/envelopes.html">Envelopes</a></li>
+                <li>
+                  <a class="dropdown-item" href="./products/floral_frames.html"
+                    >Floral Frames</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./products/floral_hoops.html"
+                    >Floral hoop</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./products/gift_wrapping.html"
+                    >Gift wrapping</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./products/resin_artworks.html"
+                    >Resin Artworks/sculpture</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./products/resin_watches.html"
+                    >Resin watches</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./products/envelopes.html"
+                    >Envelopes</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -134,78 +162,85 @@
           </div>
           <div class="col-sm-12 col-lg-6">
             <div class="p-5">
-              <h2 class="mb-4" style="text-align: center;">Send Us A Message</h2>
-              <table>
-                <tr>
-                  <td colspan="2">TELL US YOUR NAME *</td>
-                </tr>
-                <tr style="border-collapse: collapse;">
-                  <td>
-                    <input
-                      type="text"
-                      id="firstName"
-                      placeholder="First Name"
-                      required
-                    />
-                  </td>
-                  <td>
-                    <input type="text" id="lastName" placeholder="Last Name" required />
-                  </td>
-                </tr>
+              <h2 class="mb-4" style="text-align: center">Send Us A Message</h2>
+              <form action="">
+                <table>
+                  <tr>
+                    <td colspan="2">TELL US YOUR NAME *</td>
+                  </tr>
+                  <tr style="border-collapse: collapse">
+                    <td>
+                      <input
+                        type="text"
+                        id="firstName"
+                        placeholder="First Name"
+                        required
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Last Name"
+                        required
+                      />
+                    </td>
+                  </tr>
 
-                <tr>
-                  <td colspan="2">ENTER YOUR EMAIL *</td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    <input
-                      type="email"
-                      id="email"
-                      placeholder="example@email.com"
-                      required
-                    />
-                  </td>
-                </tr>
+                  <tr>
+                    <td colspan="2">ENTER YOUR EMAIL *</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="example@email.com"
+                        required
+                      />
+                    </td>
+                  </tr>
 
-                <tr>
-                  <td colspan="2">ENTER PHONE NUMBER *</td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    <input
-                      type="text"
-                      id="phoneNumber"
-                      placeholder="Eg. +1 800 000000"
-                      required
-                    />
-                  </td>
-                </tr>
+                  <tr>
+                    <td colspan="2">ENTER PHONE NUMBER *</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <input
+                        type="text"
+                        id="phoneNumber"
+                        placeholder="Eg. +1 800 000000"
+                        required
+                      />
+                    </td>
+                  </tr>
 
-                <tr>
-                  <td colspan="2">MESSAGE *</td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    <textarea
-                      rows="7"
-                      cols="23"
-                      placeholder="Write us a message"
-                      required
-                    ></textarea>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    <button
-                      type="button"
-                      style="width: 100%"
-                      class="btn btn-success"
-                    >
-                      Submit
-                    </button>
-                  </td>
-                </tr>
-              </table>
+                  <tr>
+                    <td colspan="2">MESSAGE *</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <textarea
+                        rows="7"
+                        cols="23"
+                        placeholder="Write us a message"
+                        required
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <button
+                        type="submit"
+                        style="width: 100%"
+                        class="btn btn-success"
+                      >
+                        Submit
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </form>
             </div>
           </div>
         </div>
@@ -215,21 +250,21 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="footer-col" style="width: 25%;">
+          <div class="footer-col" style="width: 25%">
             <h4>company</h4>
             <ul>
               <li><a href="#">about us</a></li>
               <li><a href="#">privacy policy</a></li>
             </ul>
           </div>
-          <div class="footer-col" style="width: 25%;">
+          <div class="footer-col" style="width: 25%">
             <h4>get help</h4>
             <ul>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Contact US</a></li>
             </ul>
           </div>
-          <div class="footer-col" style="width: 25%;">
+          <div class="footer-col" style="width: 25%">
             <h4>online shop</h4>
             <ul>
               <li><a href="#">Resin Watch</a></li>
@@ -238,7 +273,7 @@
               <li><a href="#">Sculpture</a></li>
             </ul>
           </div>
-          <div class="footer-col" style="width: 25%;">
+          <div class="footer-col" style="width: 25%">
             <h4>follow us</h4>
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -249,7 +284,7 @@
           </div>
         </div>
       </div>
-   </footer>
+    </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
