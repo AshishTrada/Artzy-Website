@@ -65,7 +65,8 @@
                 class="nav-link active"
                 aria-current="page"
                 href="./product.html"
-                >Products</a> 
+                >Products</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -75,10 +76,8 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                
               </a>
               <ul class="dropdown-menu">
-                
                 <li>
                   <a class="dropdown-item" href="./products/floral_frames.html"
                     >Floral Frames</a
@@ -164,7 +163,12 @@
           <div class="col-sm-12 col-lg-6">
             <div class="p-5">
               <h2 class="mb-4" style="text-align: center">Send Us A Message</h2>
-              <form action="">
+              <form
+                action=""
+                name="cForm"
+                onsubmit="return validateForm()"
+                method="post"
+              >
                 <table>
                   <tr>
                     <td colspan="2">TELL US YOUR NAME *</td>
@@ -173,9 +177,9 @@
                     <td>
                       <input
                         type="text"
+                        name="firstName"
                         id="firstName"
                         placeholder="First Name"
-                        required
                       />
                     </td>
                     <td>
@@ -183,7 +187,6 @@
                         type="text"
                         id="lastName"
                         placeholder="Last Name"
-                        required
                       />
                     </td>
                   </tr>
@@ -197,7 +200,6 @@
                         type="email"
                         id="email"
                         placeholder="example@email.com"
-                        required
                       />
                     </td>
                   </tr>
@@ -211,7 +213,6 @@
                         type="text"
                         id="phoneNumber"
                         placeholder="Eg. +1 800 000000"
-                        required
                       />
                     </td>
                   </tr>
@@ -225,7 +226,8 @@
                         rows="7"
                         cols="23"
                         placeholder="Write us a message"
-                        required
+                        name="message"
+                        id="message"
                       ></textarea>
                     </td>
                   </tr>
@@ -268,10 +270,10 @@
           <div class="footer-col" style="width: 25%">
             <h4>online shop</h4>
             <ul>
-              <li><a href="#">Resin Watch</a></li>
-              <li><a href="#">Floral Frames</a></li>
-              <li><a href="#">Floral hoops</a></li>
-              <li><a href="#">Sculpture</a></li>
+              <li><a href="./products/resin_watches.html">Resin Watch</a></li>
+              <li><a href="./products/floral_frames.html">Floral Frames</a></li>
+              <li><a href="./products/floral_hoops.html">Floral hoops</a></li>
+              <li><a href="./products/resin_artworks.html">Sculpture</a></li>
             </ul>
           </div>
           <div class="footer-col" style="width: 25%">
@@ -279,7 +281,7 @@
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/artzy.designs/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
@@ -295,3 +297,49 @@
     ></script>
   </body>
 </html>
+
+<script>
+  function validateForm() {
+    let fname = document.forms["cForm"]["firstName"].value;
+    let lname = document.forms["cForm"]["lastName"].value;
+    let email = document.forms["cForm"]["email"].value;
+    let phone = document.forms["cForm"]["phoneNumber"].value;
+    let message = document.forms["cForm"]["message"].value;
+
+    if (fname == "") {
+      alert("First name must be filled out.");
+      return false;
+    }
+
+    if (lname == "") {
+      alert("Last name must be filled out.");
+      return false;
+    }
+
+    if (email == "") {
+      alert("Email must be filled out.");
+      return false;
+    }
+
+    if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+      alert("Incorrect email");
+      return false;
+    }
+
+    if (phone == "") {
+      alert("Phone number must be filled out.");
+      return false;
+    }
+
+    if (phone.length != 10) {
+      alert("Incorrect mobile number");
+      return false;
+    }
+
+    if (message == "") {
+      alert("Message must be filled out.");
+      return false;
+    }
+    
+  }
+</script>
