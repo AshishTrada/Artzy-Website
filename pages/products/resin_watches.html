@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +28,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../../styles/style.css" />
-    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/products/resin_watches.css">
+    <link rel="stylesheet" href="../../styles/footer.css" />
 
     <title>Resin Watches</title>
   </head>
@@ -38,7 +39,12 @@
     <!-- navigation menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html">Home</a>
+        <a class="navbar-brand" href="../../index.html"
+          ><img
+            src="../../images/homepage/logo (1).png"
+            alt="Logo"
+            width="100px"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -56,7 +62,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="./aboutus.html"
+                href="../aboutus.html"
                 >About Us</a
               >
             </li>
@@ -65,7 +71,8 @@
                 class="nav-link active"
                 aria-current="page"
                 href="../product.html"
-                >Products</a> 
+                >Products</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -75,21 +82,36 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./floral_frames.html">Floral Frames</a></li>
-                <li><a class="dropdown-item" href="./floral_hoop.html">Floral hoop</a></li>
-                <li><a class="dropdown-item" href="./gift_wrapping.html">Gift wrapping</a></li>
                 <li>
-                  <a class="dropdown-item" href="./resin_artworks.html">Resin Artworks/sculpture</a>
+                  <a class="dropdown-item" href="./floral_frames.html"
+                    >Floral Frames</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./floral_hoops.html"
+                    >Floral hoops</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./gift_wrapping.html"
+                    >Gift wrapping</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./resin_artworks.html"
+                    >Resin Artworks/sculpture</a
+                  >
                 </li>
                 <li><a class="dropdown-item" href="#">Resin watches</a></li>
-                <li><a class="dropdown-item" href="./envelopes.html">Envelopes</a></li>
+                <li>
+                  <a class="dropdown-item" href="./envelopes.html">Envelopes</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./blogs.html"
+              <a class="nav-link active" aria-current="page" href="../blogs.html"
                 >Blogs</a
               >
             </li>
@@ -118,7 +140,7 @@
     </nav>
 
     <div class="container">
-      <h1 class="text-center my-4">Resin Watches</h1>
+      <h3 class="section-heading">Resin Watches</h3>
 
       <div class="row my-4">
         <div class="col mx-auto">
@@ -139,9 +161,7 @@
                     lead-in to additional content. This content is a little bit
                     longer.
                   </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -161,9 +181,7 @@
                     lead-in to additional content. This content is a little bit
                     longer.
                   </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </p>
+                  
                 </div>
               </div>
               <div class="col-md-4">
@@ -197,9 +215,7 @@
                     lead-in to additional content. This content is a little bit
                     longer.
                   </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -218,9 +234,6 @@
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
                     longer.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
                   </p>
                 </div>
               </div>
@@ -255,9 +268,7 @@
                     lead-in to additional content. This content is a little bit
                     longer.
                   </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -269,41 +280,45 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="footer-col" style="width: 25%;">
+          <div class="footer-col" style="width: 25%">
             <h4>company</h4>
             <ul>
-              <li><a href="#">about us</a></li>
+              <li><a href="../aboutus.html">about us</a></li>
               <li><a href="#">privacy policy</a></li>
             </ul>
           </div>
-          <div class="footer-col" style="width: 25%;">
+          <div class="footer-col" style="width: 25%">
             <h4>get help</h4>
             <ul>
               <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact US</a></li>
+              <li><a href="../contact.html">Contact US</a></li>
             </ul>
           </div>
-          <div class="footer-col" style="width: 25%;">
+          <div class="footer-col" style="width: 25%">
             <h4>online shop</h4>
             <ul>
               <li><a href="#">Resin Watch</a></li>
-              <li><a href="#">Floral Frames</a></li>
-              <li><a href="#">Floral hoops</a></li>
-              <li><a href="#">Sculpture</a></li>
+              <li><a href="./floral_frames.html">Floral Frames</a></li>
+              <li><a href="./floral_hoops.html">Floral hoops</a></li>
+              <li><a href="./resin_artworks.html">Sculpture</a></li>
             </ul>
           </div>
-          <div class="footer-col" style="width: 25%;">
+          <div class="footer-col" style="width: 25%">
             <h4>follow us</h4>
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a
+                href="https://www.instagram.com/artzy.designs/?hl=en"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
       </div>
-   </footer>
+    </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
