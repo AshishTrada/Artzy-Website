@@ -1,0 +1,40 @@
+.container p {
+  font-family: Overpass, sans-serif;
+}
+
+.col-md-5{
+    background-color: rgba(249, 250, 251);
+}
+
+.date{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: rgba(75, 85, 99, 1);
+    line-height: 1rem;
+    font-family: Overpass, sans-serif;
+}
+
+h1 {
+  font-family: Playfair Display, serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2{
+    font-family: Playfair Display, serif;
+    font-size: 1.875rem;
+}
+
+.link{
+    font-family: Overpass, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+    color: black;
+}
