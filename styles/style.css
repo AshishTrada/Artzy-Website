@@ -1,64 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
+.testimonial {
+    margin: 50px auto;
 }
-.se1{
-    margin: 1rem 7rem;
-    display: flex;
+.testimonial h1{
+    text-align: center;
+    font-weight: bold;
+    color: #ff9800;
+    padding-bottom: 10px;
+    text-overflow: uppercase;
 }
-.d1{
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.testimonial h1::after
+{
+    content: '';
+    background: #ff9800;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px ;
 }
-.d1 img{
-    width:20rem;
-    height: 20rem;
+.testimonial .row{
+    margin-top: 30px;
 }
-.d2{
-    padding:0 2rem;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.col-md-4{
+    margin: 40px auto;
+}
+.profile{
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+.profile img{
+    top: 150%;
+    position: absolute;
+    margin: auto;
+    border: 10px solid white;
+}
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #ff9800;
+}
+.profile:hover{
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+q{
+    font-size: 16px;
+    line-height: 30px;
 }
 
-.items img{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 5rem;
-    margin-right: 2rem;
+q::before{
+    font-size: 50px;
+    position: relative;
+    color: black;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
 }
-.se2{
-    margin: 1rem 7rem;
-}
-.items{
-    /* border: 1px solid black; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0;
-}
-.cards{
-    /* margin: 2rem 5rem; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.card{
-    margin: 2rem;
-}
-@media screen and (max-width:1050px) {
-    .se1{
-        flex-direction: column;
-        margin: 0;
-    }
-    .d1 img{
-        width: 100%;
-        height: 30rem;
-    }
-    .items{
-        flex-direction: column;
-    }
-}
+
