@@ -1,277 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/footer.css">
 
-    <title>Home page</title>
-  </head>
-  <body>
-    <!-- navigation menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="../images/homepage/logo (1).png" alt="Logo" width="100px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./pages/aboutus.html"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./pages/product.html"
-                >Products</a> 
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link active dropdown-toggle"
-                role="button"
-                href="#"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./pages/products/floral_frames.html">Floral Frames</a></li>
-                <li><a class="dropdown-item" href="./pages/products/floral_hoops.html">Floral hoop</a></li>
-                <li><a class="dropdown-item" href="./pages/products/gift_wrapping.html">Gift wrapping</a></li>
+  <title>Home page</title>
+</head>
 
-                <li>
-                  <a class="dropdown-item" href="./pages/products/resin_artworks.html">Resin Artworks/sculpture</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/products/resin_watches.html"
-                    >Resin watches</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="./pages/products/envelopes.html">Envelopes</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./pages/blogs.html"
-                >Blogs</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./pages/contact.html"
-                >Contact Us</a
-              >
-            </li>
-            
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <!-- image slider -->
-    <div
-      id="carouselExampleFade"
-      class="carousel slide carousel-fade"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="./images/homepage/logo (1).jpg"
-            class="d-block w-100"
-            alt="slide2" 
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./images/homepage/logo (2).jpg"
-            class="d-block w-100"
-            alt="slide3" 
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+<body>
+  <!-- navigation menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../images/homepage/logo (1).png" alt="Logo" width="100px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/product.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" role="button" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./pages/products/floral_frames.html">Floral Frames</a></li>
+              <li><a class="dropdown-item" href="./pages/products/floral_hoops.html">Floral hoop</a></li>
+              <li><a class="dropdown-item" href="./pages/products/gift_wrapping.html">Gift wrapping</a></li>
+
+              <li>
+                <a class="dropdown-item" href="./pages/products/resin_artworks.html">Resin Artworks/sculpture</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/products/resin_watches.html">Resin watches</a>
+              </li>
+              <li><a class="dropdown-item" href="./pages/products/envelopes.html">Envelopes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/contact.html">Contact Us</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
     </div>
+  </nav>
 
-    <section class="se1">
-      <div class="d1">
-        <img src="./images/products/floral_frames/1.JPG" alt="">
+  <!-- image slider -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/homepage/logo (1).jpg" class="d-block w-100" alt="slide2" />
       </div>
-
-      <div class="d2">
-        <p>Painting, the expression of ideas and emotions, with the creation of certain aesthetic qualities, in a two-dimensional visual language. The elements of this language—its shapes, lines, colours, tones, and textures—are used in various ways to produce sensations of volume, space, movement, and light on a flat surface.</p>
-
-        <p>Here , artezy website gives information regarding customize arts and paintings which is started by gujarati couple in surat , gujarat .</p>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iusto quam repellat facilis nulla. Omnis aut quisquam alias quos ducimus dolore tenetur laboriosam. Voluptates voluptate voluptatibus voluptatem qui adipisci ab!</p>
-
+      <div class="carousel-item">
+        <img src="./images/homepage/logo (2).jpg" class="d-block w-100" alt="slide3" />
       </div>
-    </section>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <section class="se2">
-
-        <div class="items">
-          <img src="./images/contact_form.jpg" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis est minus corporis dolore velit eaque facilis, ad perferendis esse odio sit temporibus voluptas possimus? Est repellendus neque exercitationem autem iste.</p>
-        </div>
-
-        <div class="items">
-          <img src="./images/contact_form.jpg" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis est minus corporis dolore velit eaque facilis, ad perferendis esse odio sit temporibus voluptas possimus? Est repellendus neque exercitationem autem iste.</p>
-        </div>
-
-    </section>
-
-    <section class="cards">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-
-    </section>
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col" style="width: 25%;">
-            <h4>company</h4>
-            <ul>
-              <li><a href="./pages/aboutus.html">about us</a></li>
-              <li><a href="#">privacy policy</a></li>
-            </ul>
+  <!-- testimonial -->
+  <section class="testimonial">
+    <div class="container">
+      <h1>What our Customers Say</h1>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="profile">
+            <img class="user" src="./images/homepage/logo (1).jpg" alt="u1">
+            <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum, quos, fuga aliquid pariatur incidunt reprehenderit vitae perferendis blanditiis magnam commodi debitis tempore omnis sunt magni provident dolor perspiciatis nihil!
+            </q>
+            <h3>first last</h3>
           </div>
-          <div class="footer-col" style="width: 25%;">
-            <h4>get help</h4>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="./pages/contact.html">Contact US</a></li>
-            </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="profile">
+            <img class="user" src="./images/homepage/logo (1).jpg" alt="u1">
+            <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum, quos, fuga aliquid pariatur incidunt reprehenderit vitae perferendis blanditiis magnam commodi debitis tempore omnis sunt magni provident dolor perspiciatis nihil!
+            </q>
+            <h3>first last</h3>
           </div>
-          <div class="footer-col" style="width: 25%;">
-            <h4>online shop</h4>
-            <ul>
-              <li><a href="./pages/products/resin_watches.html">Resin Watch</a></li>
-              <li><a href="./pages/products/floral_frames.html">Floral Frames</a></li>
-              <li><a href="./pages/products/floral_hoops.html">Floral hoops</a></li>
-              <li><a href="./pages/products/resin_artworks.html">Sculpture</a></li>
-            </ul>
-          </div>
-          <div class="footer-col" style="width: 25%;">
-            <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/artzy.designs/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="profile">
+            <img class="user" src="./images/homepage/logo (1).jpg" alt="u1">
+            <q> ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum, quos, fuga aliquid pariatur incidunt reprehenderit vitae perferendis blanditiis magnam commodi debitis tempore omnis sunt magni provident dolor perspiciatis nihil!
+            </q>
+            <h3>first last</h3>
           </div>
         </div>
       </div>
-   </footer>
+  </section>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col" style="width: 25%;">
+          <h4>company</h4>
+          <ul>
+            <li><a href="./pages/aboutus.html">about us</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" style="width: 25%;">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="./pages/contact.html">Contact US</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" style="width: 25%;">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="./pages/products/resin_watches.html">Resin Watch</a></li>
+            <li><a href="./pages/products/floral_frames.html">Floral Frames</a></li>
+            <li><a href="./pages/products/floral_hoops.html">Floral hoops</a></li>
+            <li><a href="./pages/products/resin_artworks.html">Sculpture</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" style="width: 25%;">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/artzy.designs/?hl=en" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"
-      ></script>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
