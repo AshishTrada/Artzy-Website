@@ -1,64 +1,204 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Custom default button */
+.cover-sec .btn-lg,
+.btn-lg:hover,
+.btn-lg:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-weight: bold;
 }
-.se1{
-    margin: 1rem 7rem;
-    display: flex;
-}
-.d1{
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.d1 img{
-    width:20rem;
-    height: 20rem;
-}
-.d2{
-    padding:0 2rem;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cover-sec {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
-.items img{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 5rem;
-    margin-right: 2rem;
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 400px;
+  background-color: #333;
 }
-.se2{
-    margin: 1rem 7rem;
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
 }
-.items{
-    /* border: 1px solid black; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0;
+.cover-heading {
+    font-family: 'Times New Roman', Times, serif;
 }
-.cards{
-    /* margin: 2rem 5rem; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Padding for spacing */
+.cover-sec .inner {
+  padding: 30px;
 }
-.card{
-    margin: 2rem;
+
+/* testimonial */
+.testimonial {
+  margin: auto;
 }
-@media screen and (max-width:1050px) {
-    .se1{
-        flex-direction: column;
-        margin: 0;
-    }
-    .d1 img{
-        width: 100%;
-        height: 30rem;
-    }
-    .items{
-        flex-direction: column;
-    }
+.testimonial h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #083636;
+  padding-bottom: 10px;
+  text-overflow: uppercase;
+}
+.testimonial h1::after {
+  content: "";
+  background: #083636;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.testimonial .row {
+  margin-top: 30px;
+}
+.col-md-4 {
+  margin: 40px auto;
+}
+.profile {
+  padding: 70px 10px 10px;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+}
+.profile img {
+  margin: auto;
+  border: 10px solid white;
+  margin-top: -8rem;
+}
+.user {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.profile h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #083636;
+}
+.profile:hover {
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+q {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+q::before {
+  font-size: 50px;
+  position: relative;
+  color: black;
+  line-height: 20px;
+  bottom: -15px;
+  right: 5px;
+}
+
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+.product h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #083636;
+  padding-bottom: 10px;
+  text-overflow: uppercase;
+}
+.product h1::after {
+  content: "";
+  background: #083636;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.product-brand {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #083636;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
 }
