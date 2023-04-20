@@ -9,7 +9,7 @@ header.masthead {
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
+  background-color: #f0ebd5;
   height: 100%;
   width: 100%;
   top: 0;
@@ -23,6 +23,7 @@ header.masthead .h1 {
 
 .masthead p{
   font-size: 1.4rem;
+  color: #083636;
 }
 
 .features-icons {
